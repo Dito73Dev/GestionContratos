@@ -1,0 +1,6 @@
+
+Runner.pages.PageSettings.addPageEvent('informe_intersup_plan_pagos',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){let timerInterval
+Swal.fire({title:'Importante!',html:'<p>Se han adicionado 2 nuevas funcionalidades, </p>'+'<ol>'+'<li>Indicar el mes en el que se realiza el pago. </li>'+'<li>Indicar si el pago corresponde a fracción de mes o mes completo </li>'+'</ol>',timer:7000,timerProgressBar:true,didOpen:()=>{Swal.showLoading()
+const b=Swal.getHtmlContainer().querySelector('b')
+timerInterval=setInterval(()=>{b.textContent=Swal.getTimerLeft()},10000)},willClose:()=>{clearInterval(timerInterval)}}).then((result)=>{if(result.dismiss===Swal.DismissReason.timer){console.log('I was closed by the timer')}})
+var ctrl=Runner.getControl(pageid,'sysuser');ctrl.makeReadonly();;});Runner.pages.PageSettings.addPageEvent('informe_intersup_plan_pagos',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'sysuser');ctrl.makeReadonly();});

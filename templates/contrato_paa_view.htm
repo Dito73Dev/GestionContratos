@@ -1,0 +1,279 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato_paa view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN order_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_order_id}  r-vertical-field" data-fieldname="order_id" data-signal-error-for="order_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="order_id" data-fieldname="order_id" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_order_id}">
+		
+		{BEGIN order_id_label}{$label contrato_paa order_id }{END order_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$order_id_value}	</div>
+
+		
+</div>
+
+
+{END order_id_fieldblock}
+											
+{BEGIN id_cont_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-vertical-field" data-fieldname="id_cont_fk" data-signal-error-for="id_cont_fk{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_cont_fk" data-fieldname="id_cont_fk" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_cont_fk}">
+		
+		{BEGIN id_cont_fk_label}{$label contrato_paa id_cont_fk }{END id_cont_fk_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_cont_fk_value}	</div>
+
+		
+</div>
+
+
+{END id_cont_fk_fieldblock}
+											
+{BEGIN paa_id_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paa_id_fk}  r-vertical-field" data-fieldname="paa_id_fk" data-signal-error-for="paa_id_fk{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="paa_id_fk" data-fieldname="paa_id_fk" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_paa_id_fk}">
+		
+		{BEGIN paa_id_fk_label}{$label contrato_paa paa_id_fk }{END paa_id_fk_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$paa_id_fk_value}	</div>
+
+		
+</div>
+
+
+{END paa_id_fk_fieldblock}
+											
+{BEGIN paa_valor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paa_valor}  r-vertical-field" data-fieldname="paa_valor" data-signal-error-for="paa_valor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="paa_valor" data-fieldname="paa_valor" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_paa_valor}">
+		
+		{BEGIN paa_valor_label}{$label contrato_paa paa_valor }{END paa_valor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$paa_valor_value}	</div>
+
+		
+</div>
+
+
+{END paa_valor_fieldblock}
+											
+{BEGIN paa_valor_ct_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paa_valor_ct}  r-vertical-field" data-fieldname="paa_valor_ct" data-signal-error-for="paa_valor_ct{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="paa_valor_ct" data-fieldname="paa_valor_ct" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_paa_valor_ct}">
+		
+		{BEGIN paa_valor_ct_label}{$label contrato_paa paa_valor_ct }{END paa_valor_ct_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$paa_valor_ct_value}	</div>
+
+		
+</div>
+
+
+{END paa_valor_ct_fieldblock}
+											
+{BEGIN paa_obs_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paa_obs}  r-vertical-field" data-fieldname="paa_obs" data-signal-error-for="paa_obs{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="paa_obs" data-fieldname="paa_obs" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_paa_obs}">
+		
+		{BEGIN paa_obs_label}{$label contrato_paa paa_obs }{END paa_obs_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$paa_obs_value}	</div>
+
+		
+</div>
+
+
+{END paa_obs_fieldblock}
+											
+{BEGIN paa_unspsc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_paa_unspsc}  r-vertical-field" data-fieldname="paa_unspsc" data-signal-error-for="paa_unspsc{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="paa_unspsc" data-fieldname="paa_unspsc" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_paa_unspsc}">
+		
+		{BEGIN paa_unspsc_label}{$label contrato_paa paa_unspsc }{END paa_unspsc_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$paa_unspsc_value}	</div>
+
+		
+</div>
+
+
+{END paa_unspsc_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
