@@ -8,9 +8,9 @@ El Módulo de Contratos es una parte esencial de nuestro sistema de gestión emp
 
 ## Características Clave
 ### Creación de Contratos
-- Crea contratos personalizados con una variedad de plantillas disponibles.
-- Importa detalles del cliente y otros datos relevantes de forma automática.
-- Define fechas de inicio y finalización, así como condiciones y términos específicos.
+- Crea contratos personalizados con una variedad de opciones disponibles.
+- Presenta detalles del proveedor y otros datos relevantes del contrato.
+- Define fechas de inicio y finalización, así como condiciones, obligacionesy términos específicos.
 
 ### Seguimiento y Notificaciones
 - Establece recordatorios y alertas para fechas críticas en el ciclo de vida del contrato.
